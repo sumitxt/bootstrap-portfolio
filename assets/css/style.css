@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 .padd { 
     padding-top: 65px !important; 
 }

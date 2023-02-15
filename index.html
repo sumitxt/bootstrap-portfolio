@@ -6,14 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sumit Barua</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <!-- MDB -->
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" /> -->
+  
     <link rel="stylesheet" href="./assets/css/mdb.dark.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css" </head>
+      <!-- main css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
 
 <body>
     <header>
@@ -28,7 +32,7 @@
                 <div class="collapse navbar-collapse" id="navbarExample01">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" aria-current="page" href="index.html#hero">Home</a>
+                            <a class="nav-link" aria-current="page" href="index.html#hero"><i class="fa-solid fa-house-user"></i> Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#about">About</a>
@@ -59,8 +63,9 @@
                 <div class="d-flex justify-content-center align-items-center h-100">
                     <div class="text-white">
                         <h1 class="mb-3">Sumit Barua</h1>
-                        <h4 class="mb-3">Web Developer</h4>
-                        <a class="btn btn-outline-light btn-lg" href="#!" role="button">Contact me</a>
+                        <h4 class="mb-3"><span class="typed-word"></span
+                            ><span class="cursor">&nbsp;</span></h4>
+                        <a class="btn btn-dark btn-lg" href="index.html#contact" role="button">Contact me</a>
                     </div>
                 </div>
             </div>
@@ -68,7 +73,7 @@
         <!-- Background image -->
     </header>
     <div class="jumbotron padd" id="about">
-        <h1 class="display-4 text-center">About me</h1>
+        <h1 class="display-1 text-center">About me</h1>
         <p class="lead text-center">Web Developer with a EEE degree</p>
         <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
         <p class="lead">
@@ -142,17 +147,17 @@
     <!-- Portfolio Section -->
     <div class="container padd" id="portfolio">
         <div>
-            <h3 class="align-center m-0 display-2"><strong>My Works</strong></h3>
+            <h3 class="align-center m-0 display-1"><strong>My Works</strong></h3>
             <h4 class="align-center mb-0 mt-2 display-5">In my book E stands for Electricity and W stands for Web.</h4>
         </div>
         <hr class="my-4">
         <!-- cards section -->
         <div class="container">
-            <div class="buttons">
+            <div class="buttons mb-2">
                 <h2><b>filter</b></h2>
                 <button class="btn btn-danger" onclick="clearAll()"><i class="fa-solid fa-eraser"></i> Clear
                     filter</button>
-                <button class="btn btn-light" onclick="filter('HTML')">Portfolio</button>
+                <button class="btn btn-light" onclick="filter('Portfolio')">Portfolio</button>
                 <button class="btn btn-light" onclick="filter('CSS')">CSS</button>
                 <button class="btn btn-light" onclick="filter('JavaScript')">JavaScript</button>
                 <button class="btn btn-light" onclick="filter('MERN')">MERN</button>
@@ -160,7 +165,7 @@
             </div>
             <div>
                 <div class="row" id="items">
-                    <div class="col-sm-12 col-md-6 col-lg-4 space-top">
+                    <div class="col-sm-12 col-md-6 col-lg-4 space-top mb-2">
                         <div class="card">
                             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                                 <img src="./assets/img/portfolio.jpg" class="img-fluid" />
@@ -178,7 +183,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 space-top">
+                    <div class="col-sm-12 col-md-6 col-lg-4 space-top mb-2">
                         <div class="card">
                             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                                 <img src="./assets/img/portfolio2.jpg" class="img-fluid" />
@@ -195,7 +200,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 space-top">
+                    <div class="col-sm-12 col-md-6 col-lg-4 space-top mb-2">
                         <div class="card">
                             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                                 <img src="./assets/img/crud.jpg" class="img-fluid" />
@@ -213,6 +218,23 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 space-top mb-2">
+                        <div class="card">
+                            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                                <img src="./assets/img/responsivedesign1.jpg" class="img-fluid" />
+                                <a href="#!">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Responsive Product card design</h5>
+
+                                <p class="card-text text-truncate">Responsive product card design using HTML CSS and JavaScript</p>
+                                <a href="https://sumitxt.github.io/Frontend-Mentor-QR-code-component/" target="_blank" class="btn btn-primary">View
+                                    Live Version</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <hr class="my-4">
@@ -225,7 +247,7 @@
     <!-- Carousel wrapper -->
     <div class="container padd" id="testimonial">
         <div>
-            <h3 class="align-center m-0 display-2"><strong>Testimonial</strong></h3>
+            <h3 class="align-center m-0 display-1"><strong>Testimonial</strong></h3>
             <h4 class="align-center mb-0 mt-2 display-5">See what my customers said about me.</h4>
         </div>
         <hr class="my-4">
@@ -329,11 +351,12 @@
         <section class="mb-4">
 
             <!--Section heading-->
-            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+            <h2 class="h1-responsive font-weight-bold text-center my-4 display-1">Contact me</h2>
             <!--Section description-->
-            <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to
-                contact us directly. Our team will come back to you within
+            <p class="text-center w-responsive mx-auto mb-5 lead">Do you have any questions? Please do not hesitate to
+                contact me directly. I will try to come back to you within
                 a matter of hours to help you.</p>
+            <hr class="my-4">
 
             <div class="row">
 
@@ -347,8 +370,9 @@
                             <!--Grid column-->
                             <div class="col-md-6">
                                 <div class="md-form mb-0">
-                                    <input type="text" id="name" name="name" class="form-control">
                                     <label for="name" class="">Your name</label>
+                                    <input type="text" id="name" name="name" class="form-control">
+
                                 </div>
                             </div>
                             <!--Grid column-->
@@ -356,8 +380,9 @@
                             <!--Grid column-->
                             <div class="col-md-6">
                                 <div class="md-form mb-0">
-                                    <input type="text" id="email" name="email" class="form-control">
                                     <label for="email" class="">Your email</label>
+                                    <input type="text" id="email" name="email" class="form-control">
+
                                 </div>
                             </div>
                             <!--Grid column-->
@@ -369,8 +394,9 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="md-form mb-0">
-                                    <input type="text" id="subject" name="subject" class="form-control">
                                     <label for="subject" class="">Subject</label>
+                                    <input type="text" id="subject" name="subject" class="form-control">
+
                                 </div>
                             </div>
                         </div>
@@ -383,9 +409,10 @@
                             <div class="col-md-12">
 
                                 <div class="md-form">
+                                    <label for="message">Your message</label>
                                     <textarea type="text" id="message" name="message" rows="2"
                                         class="form-control md-textarea"></textarea>
-                                    <label for="message">Your message</label>
+
                                 </div>
 
                             </div>
@@ -394,10 +421,10 @@
 
                     </form>
 
-                    <div class="text-center text-md-left">
+                    <div class="text-center text-md-left mt-2">
                         <a class="btn btn-primary" onclick="validateForm();">Send</a>
                     </div>
-                    <div class="status"></div>
+                    <!-- <div class="status"></div> -->
                 </div>
                 <!--Grid column-->
 
@@ -426,6 +453,9 @@
     </div>
     <!-- MDB -->
     <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script> -->
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- offline script source -->
     <script type="text/javascript" src="./assets/js/mdb.min.js"></script>
