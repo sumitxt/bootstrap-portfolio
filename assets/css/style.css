@@ -1,6 +1,14 @@
-html {
-    scroll-behavior: smooth;
-  }
+.btn:active{
+  color: black !important;
+  background-color: gray !important;
+  border-color: gray !important;
+}
+.btn:hover{
+  color: black !important;
+  background-color: black !important;
+  border-color: black !important;
+  color: white !important;
+}
 .padd { 
     padding-top: 65px !important; 
 }

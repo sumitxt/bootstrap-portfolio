@@ -15,6 +15,10 @@
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" /> -->
   
     <link rel="stylesheet" href="./assets/css/mdb.dark.min.css">
+
+    <!-- sweet alert dark -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css" />
+
       <!-- main css -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -98,9 +102,9 @@
                         <div class="item mbr-flex">
                             <div class="text-box">
                                 <h4 class="display-4">
-                                    <strong>Web Develop</strong>
+                                    <strong>Web development</strong>
                                 </h4>
-                                <h5 class="display-7">I am skilled in MERN stack web development. MERN stands for
+                                <h5 class="lead">I am skilled in MERN stack web development. MERN stands for
                                     MongoDB, Express, React, Node, after the four key technologies that make up the
                                     stack.
                                     <div>
@@ -121,7 +125,7 @@
                                 <h4 class="display-4">
                                     <strong>PLC Ladder Diagram</strong>
                                 </h4>
-                                <h5 class="display-7">I can design PLC diagram using RSLogix Micro. Ladder Diagram is a
+                                <h5 class="lead">I can design PLC diagram using RSLogix Micro. Ladder Diagram is a
                                     graphical programming language that is used for developing software for programmable
                                     logic controllers (PLCs). It is one of the languages that the IEC 61131 standard
                                     specifies for use with PLCs. A program in ladder diagram notation is a circuit
@@ -132,7 +136,7 @@
 
                             <div class="text-box">
                                 <h4 class="display-4"><strong>Work with Electricity</strong></h4>
-                                <h5 class="display-7">Academically I am an Electrical Engineer. I have completed my
+                                <h5 class="lead">Academically I am an Electrical Engineer. I have completed my
                                     Diploma in Electrical Engineering from Chittagong Polytechnic Institute and B.Sc. in
                                     Electrical and Electronic Engineering from Port City International University.</h5>
                             </div>
@@ -147,21 +151,21 @@
     <!-- Portfolio Section -->
     <div class="container padd" id="portfolio">
         <div>
-            <h3 class="align-center m-0 display-1"><strong>My Works</strong></h3>
-            <h4 class="align-center mb-0 mt-2 display-5">In my book E stands for Electricity and W stands for Web.</h4>
+            <h3 class="m-0 display-1"><strong>My Works</strong></h3>
+            <p class="mb-0 mt-2 lead">In my book E stands for Electricity and W stands for Web.</p>
         </div>
         <hr class="my-4">
         <!-- cards section -->
         <div class="container">
             <div class="buttons mb-2">
                 <h2><b>filter</b></h2>
-                <button class="btn btn-danger" onclick="clearAll()"><i class="fa-solid fa-eraser"></i> Clear
+                <button class="btn btn-danger mb-2" onclick="clearAll()"><i class="fa-solid fa-eraser"></i> Clear
                     filter</button>
-                <button class="btn btn-light" onclick="filter('Portfolio')">Portfolio</button>
-                <button class="btn btn-light" onclick="filter('CSS')">CSS</button>
-                <button class="btn btn-light" onclick="filter('JavaScript')">JavaScript</button>
-                <button class="btn btn-light" onclick="filter('MERN')">MERN</button>
-                <button class="btn btn-light" onclick="filter('MongoDB')">MongoDB</button>
+                <button class="btn btn-light mb-2" onclick="filter('Portfolio')">Portfolio</button>
+                <button class="btn btn-light mb-2" onclick="filter('CSS')">CSS</button>
+                <button class="btn btn-light mb-2" onclick="filter('JavaScript')">JavaScript</button>
+                <button class="btn btn-light mb-2" onclick="filter('MERN')">MERN</button>
+                <button class="btn btn-light mb-2" onclick="filter('MongoDB')">MongoDB</button>
             </div>
             <div>
                 <div class="row" id="items">
@@ -259,7 +263,7 @@
                         style="width: 150px;" />
                     <div class="row d-flex justify-content-center">
                         <div class="col-lg-8">
-                            <h5 class="mb-3">Maria Kate</h5>
+                            <h5 class="mb-3">Mariam Kathun</h5>
                             <p>Photographer</p>
                             <p class="text-muted">
                                 <i class="fas fa-quote-left pe-2"></i>
@@ -284,7 +288,7 @@
                         style="width: 150px;" />
                     <div class="row d-flex justify-content-center">
                         <div class="col-lg-8">
-                            <h5 class="mb-3">John Doe</h5>
+                            <h5 class="mb-3">Johny Das</h5>
                             <p>Web Developer</p>
                             <p class="text-muted">
                                 <i class="fas fa-quote-left pe-2"></i>
@@ -307,7 +311,7 @@
                         style="width: 150px;" />
                     <div class="row d-flex justify-content-center">
                         <div class="col-lg-8">
-                            <h5 class="mb-3">Anna Deynah</h5>
+                            <h5 class="mb-3">Anar Kali</h5>
                             <p>UX Designer</p>
                             <p class="text-muted">
                                 <i class="fas fa-quote-left pe-2"></i>
@@ -454,7 +458,10 @@
     <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script> -->
 
     <!-- script -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
 
     <!-- offline script source -->
     <script type="text/javascript" src="./assets/js/mdb.min.js"></script>
